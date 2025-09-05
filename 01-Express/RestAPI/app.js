@@ -29,7 +29,6 @@ app.get("/books/:id", (req, res) => {
 });
 
 app.post("/newBook", (req, res) => {
-    console.log(" ---------- ", req.body, !req.body)
   if (!req.body) {
     return res.status(400).json({
       success: false,
